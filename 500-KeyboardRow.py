@@ -1,4 +1,3 @@
-class Solution(object):
 """
 Given a List of words, return the words that can be typed using letters of alphabet on
 only one row's of American keyboard like the image below.
@@ -16,6 +15,9 @@ Input: ["Hello", "Alaska", "Dad", "Peace"]
 Output: ["Alaska", "Dad"]
 """
 
+class Solution(object):
+
+
     def findWords(self, words):
         """
         :type words: List[str]
@@ -30,3 +32,6 @@ Output: ["Alaska", "Dad"]
             if wordset.issubset(row1) or wordset.issubset(row2) or wordset.issubset(row3):
                 targetwords.append(word) # save the qualified word into the output list
         return targetwords
+
+if __name__ == '__main__':
+    print(Solution().findWords(["Hello", "Alaska", "Dad", "Peace"]))

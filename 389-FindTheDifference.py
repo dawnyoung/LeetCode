@@ -1,4 +1,3 @@
-class Solution(object):
 """
 Given two strings s and t which consist of only lowercase letters.
 
@@ -19,6 +18,9 @@ e
 Explanation:
 'e' is the letter that was added.
 """
+
+class Solution(object):
+
     def findTheDifference(self, s, t):
         """
         :type s: str
@@ -35,3 +37,6 @@ Explanation:
         if diff == '':
             diff = t[-1] # return the last letter if the added letter is at the end
         return diff
+
+if __name__ == '__main__':
+    print(Solution().findTheDifference('abcd', 'abcde'))

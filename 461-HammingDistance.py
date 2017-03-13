@@ -1,4 +1,3 @@
-class Solution(object):
 """
 Hamming Distance
 
@@ -23,6 +22,9 @@ Explanation:
 The above arrows point to positions where the corresponding bits are different.
 
 """
+
+class Solution(object):
+
     def hammingDistance(self, x, y):
         """
         :type x: int
@@ -50,4 +52,8 @@ The above arrows point to positions where the corresponding bits are different.
 
     # the best way
     def hammingDistance2(self, x, y):
-        return bin(x^y).count('1') 
+        return bin(x^y).count('1')
+
+if __name__ == '__main__':
+    print(Solution().hammingDistance(1, 4))
+    print(Solution().hammingDistance2(1, 4))

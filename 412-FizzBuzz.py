@@ -1,4 +1,3 @@
-class Solution(object):
 """
 Write a program that outputs the string representation of numbers from 1 to n.
 
@@ -7,6 +6,9 @@ for the multiples of five output “Buzz”.For numbers which are multiples of
 both three and five output “FizzBuzz”.
 
 """
+
+class Solution(object):
+
     def fizzBuzz(self, n):
         """
         :type n: int
@@ -23,3 +25,7 @@ both three and five output “FizzBuzz”.
             else:
                 outlist.append(str(i))
         return outlist
+
+
+if __name__ == '__main__':
+    print(Solution().fizzBuzz(30))

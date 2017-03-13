@@ -1,10 +1,12 @@
-class Solution(object):
 """
 Write a function that takes a string as input and returns the string reversed.
 
 Example:
 Given s = "hello", return "olleh".
 """
+
+class Solution(object):
+
     def reverseString(self, s):
         """
         :type s: str
@@ -21,4 +23,6 @@ Given s = "hello", return "olleh".
         return s[::-1]
 
 
-
+if __name__ == '__main__':
+    print(Solution().reverseString('hello'))
+    print(Solution().reverseString2('hello'))

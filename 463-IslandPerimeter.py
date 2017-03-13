@@ -1,4 +1,3 @@
-class Solution(object):
 """
 You are given a map in form of a two-dimensional integer grid where 1
 represents land and 0 represents water. Grid cells are connected
@@ -17,6 +16,9 @@ Example:
  [1,1,0,0]]
 The perimeter is 16.
 """
+
+class Solution(object):
+
     def islandPerimeter(self, grid):
         """
         :type grid: List[List[int]]
@@ -36,3 +38,9 @@ The perimeter is 16.
                     if i > 0 and grid[j][i-1] == 1:
                         perimeter -= 2
         return perimeter
+
+if __name__ == '__main__':
+    print(Solution().islandPerimeter([[0,1,0,0],
+                                      [1,1,1,0],
+                                      [0,1,0,0],
+                                      [1,1,0,0]]))

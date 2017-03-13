@@ -1,4 +1,3 @@
-class Solution(object):
 """
 Given an array of integers where 1 ≤ a[i] ≤ n (n = size of array), some
 elements appear twice and others appear once.
@@ -17,7 +16,7 @@ Output:
 [5,6]
 """
 
-
+class Solution(object):
 
     # This should work but it exceeds the time limit
     def findDisappearedNumbers(self, nums):
@@ -33,7 +32,7 @@ Output:
 
 
     # a better way
-    def findDisppearedNumbers2(self, nums):
+    def findDisappearedNumbers2(self, nums):
         for n in nums:
             nums[abs(n)-1] = -abs(nums[abs(n)-1])
         dis = []
@@ -42,3 +41,6 @@ Output:
                 dis.append(i+1)
         return dis
                 
+if __name__ == '__main__':
+    print(Solution().findDisappearedNumbers([4,3,2,7,8,2,3,1]))
+    print(Solution().findDisappearedNumbers2([4,3,2,7,8,2,3,1]))

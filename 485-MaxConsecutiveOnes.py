@@ -1,4 +1,3 @@
-class Solution(object):
 """
 Given a binary array, find the maximum number of consecutive 1s in this array.
 
@@ -13,6 +12,9 @@ Note:
 1) The input array will only contain 0 and 1.
 2) The length of input array is a positive integer and will not exceed 10,000
 """
+
+class Solution(object):
+
     def findMaxConsecutiveOnes(self, nums):
         """
         :type nums: List[int]
@@ -28,3 +30,6 @@ Note:
             if i == 0:
                 ones = [] # reset when 0 appears
         return size
+
+if __name__ == '__main__':
+    print(Solution().findMaxConsecutiveOnes([1,1,0,1,1,1]))

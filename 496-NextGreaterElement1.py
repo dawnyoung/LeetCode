@@ -1,4 +1,3 @@
-class Solution(object):
 """
 You are given two arrays (without duplicates) nums1 and nums2 where nums1’s
 elements are subset of nums2.Find all the next greater numbers for nums1's
@@ -18,6 +17,9 @@ Explanation:
     3) For number 2 in the first array, there is no next greater number for it
        in the second array, so output -1.
 """
+
+class Solution(object):
+
     def nextGreaterElement(self, findNums, nums):
         """
         :type findNums: List[int]
@@ -38,3 +40,6 @@ Explanation:
                         out.append(nums[j]) # append the 1st greater value
                         break               # then break the loop
         return out
+
+if __name__ == '__main__':
+    print(Solution().nextGreaterElement([4,1,2],[1,3,4,2]))

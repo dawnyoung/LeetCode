@@ -1,3 +1,7 @@
+"""
+Determine whether an integer is a palindrome. Do this without extra space.
+"""
+
 class Solution(object):
     def isPalindrome(self, x):
         """
@@ -17,3 +21,6 @@ class Solution(object):
             if d1 != d2:
                 return False # return false if there is any mismatch
         return True          # otherwise, return true
+
+if __name__ == '__main__':
+    print(Solution().isPalindrome(23454))

@@ -1,4 +1,3 @@
-class Solution(object):
 """
 ou are playing the following Nim Game with your friend: There is a heap of
 stones on the table, each time one of you take turns to remove 1 to 3 stones.
@@ -30,9 +29,15 @@ n = 10 true
 n = 11 true
 n = 12 true
 """
+
+class Solution(object):
+
     def canWinNim(self, n):
         """
         :type n: int
         :rtype: bool
         """
         return n%4 != 0
+
+if __name__ == '__main__':
+    print(Solution().canWinNim(5))

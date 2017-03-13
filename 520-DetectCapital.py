@@ -1,4 +1,3 @@
-class Solution(object):
 """
 Given a word, you need to judge whether the usage of capitals in it is right
 or not.
@@ -21,6 +20,9 @@ Example 2:
 Input: "FlaG"
 Output: False
 """
+
+class Solution(object):
+
     def detectCapitalUse(self, word):
         """
         :type word: str
@@ -28,3 +30,7 @@ Output: False
         """
         return word.islower() or word.isupper() or word.istitle()
               # case 2              case 1          case 3
+
+if __name__ == '__main__':
+    print(Solution().detectCapitalUse('USA'))
+    print(Solution().detectCapitalUse('FlaG'))
